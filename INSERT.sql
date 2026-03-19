@@ -31,12 +31,13 @@ INSERT INTO albums
 		(4, 'News of the World', 1977),
 		(5, 'Баста 20', 2019),
 		(6, 'The Final Album', 2012),
-		(7, 'The Lion King: The Gift (Deluxe Edition)', 2020);
+		(7, 'The Lion King: The Gift (Deluxe Edition)', 2020),
+		(8, 'Dangerously in Love', 2003);
 			
 INSERT INTO performers_albums 
 	VALUES
 		(1, 1),
-		(2, 2),	(2, 7),
+		(2, 2),	(2, 7), (2, 8),
 		(3, 3),
 		(4, 4),
 		(5, 5),
@@ -51,7 +52,8 @@ INSERT INTO tracks
 		(5, 'Сансара', 238, 5),
 		(6, 'Hold On', 225, 6),
 		(7, 'Бонсай', 150, 1),
-		(8, 'Bigger', 226, 7);
+		(8, 'Bigger', 226, 7),
+		(9, 'Me, Myself and I', 301, 8);
 		
 INSERT INTO collections 
 	VALUES 
@@ -63,15 +65,17 @@ INSERT INTO collections
 		(6, 'News of the World', 1977),
 		(7, 'Greatest Hits', 1981),
 		(8, 'Баста 20', 2019),
-		(9, 'The Final Album', 2012);
+		(9, 'The Final Album', 2012),
+		(10, 'Dangerously in Love', 2003);
 		
 INSERT INTO collections_tracks
 	VALUES
-		(2, 1), (2, 7)
-		(3, 2), (3, 8)
+		(2, 1), (2, 7),
+		(3, 2), (3, 8),
 		(4, 3),
 		(5, 3),
 		(6, 4),
 		(7, 4),
 		(8, 5),
-		(9, 6);
+		(9, 6),
+		(10, 9);
