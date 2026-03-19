@@ -1,3 +1,5 @@
+------------------- ЗАДАНИЕ 2 -------------------------
+
 --Название и продолжительность самого длительного трека.
 SELECT name, duration
 FROM tracks t
@@ -24,9 +26,12 @@ WHERE TRIM(name) NOT LIKE '% %'
 --Название треков, которые содержат слово «мой» или «my».
 SELECT name
 FROM tracks
-WHERE TRIM(name) ILIKE '%мой%' 
-	OR TRIM(name) ILIKE '%My%'
+--WHERE TRIM(name) ILIKE '%мой%' 
+--	OR TRIM(name) ILIKE '%My%' 
+WHERE name ~* '\m(my|мой)\M'
 	
+------------------- ЗАДАНИЕ 3 -------------------------
+
 --Количество исполнителей в каждом жанре.
 SELECT g.name genre_name, COUNT(*) performer_count
 FROM performers_genres pg
